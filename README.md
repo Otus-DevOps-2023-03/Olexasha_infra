@@ -50,7 +50,7 @@ Olexasha Infrastructure Repository
     placement_policy: {}
 
 testapp_IP = 51.250.93.32
-testapp_internal_IP = 10.128.0.14
+testapp_port = 9292
 
-* testapp_port = 9292
+* testapp_internal_IP = 10.128.0.14
 * testapp_URI = http://51.250.93.32:9292/
