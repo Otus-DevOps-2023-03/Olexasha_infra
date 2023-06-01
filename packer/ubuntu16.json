@@ -2,7 +2,7 @@
     "builders": [
         {
             "type": "yandex",
-            "service_account_key_file": "./packer/files/packer_key.json",
+            "service_account_key_file": "./files/packer_key.json",
             "folder_id": "b1gqd4jqceu8foa3um2m",
             "source_image_family": "ubuntu-1604-lts",
             "image_name": "reddit-base-{{timestamp}}",
@@ -18,12 +18,12 @@
     "provisioners": [
         {
             "type": "shell",
-            "script": "./config-scripts/install_ruby.sh",
+            "script": "./scripts/install_ruby.sh",
             "execute_command": "sudo {{.Path}}"
         },
         {
             "type": "shell",
-            "script": "./config-scripts/install_mongodb.sh",
+            "script": "./scripts/install_mongodb.sh",
             "execute_command": "sudo {{.Path}}"
         }
     ]

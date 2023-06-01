@@ -30,17 +30,17 @@
         },
         {
             "type": "shell",
-            "script": "./config-scripts/install_ruby.sh",
+            "script": "./scripts/install_ruby.sh",
             "execute_command": "sudo {{.Path}}"
         },
         {
             "type": "shell",
-            "script": "./config-scripts/install_mongodb.sh",
+            "script": "./scripts/install_mongodb.sh",
             "execute_command": "sudo {{.Path}}"
         },
         {
             "type": "shell",
-            "script": "./packer/scripts/raise_reddit.sh",
+            "script": "./scripts/raise_reddit.sh",
             "execute_command": "sudo {{.Path}}"
         }
     ]
